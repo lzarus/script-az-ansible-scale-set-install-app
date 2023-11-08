@@ -1,0 +1,1 @@
+# script-az-ansible-scale-set-install-app
