@@ -1,0 +1,8 @@
+---
+- 
+  hosts: localhost
+  name: Install Java
+  ansible.windows.win_package:
+    path: https://download.oracle.com/java/17/archive/jdk-17.0.8_windows-x64_bin.exe
+    state: present
+    creates_path: yes

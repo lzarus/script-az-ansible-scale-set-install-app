@@ -1,0 +1,12 @@
+- hosts: localhost
+  vars:
+    resource_group: MyRG
+    scaleset_name: scalesethosts
+  tasks:
+  - include: get-hosts-tasks.yml
+
+- name: Install JRE on a scale set
+  hosts: scalesethosts
+  become: yes
+  tasks:
+  - include: java.yaml
